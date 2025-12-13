@@ -1,25 +1,25 @@
 let main = document.querySelector("main");
 let button = document.querySelector("button");
 
-button.addEventListener("click",function() {
-    let div = document.createElement("div");
-    
-    let height = Math.random()*100;
-    let width = Math.random()*100;
+let arr = ["Mohan is Great!", "Js is Love", "I am from Pune", "Learning Full Stack","Software Engineer", "I am consistent", "I am Unique", "I am brave", "I am Good", "I am Learner", "Software Developer", "HTML", "CSS", "JavaScript", "MongoDB", "Express.js", "React", "Life is Good!"]
 
-    div.style.height = height +"px"
-    div.style.width = width +"px"
+button.addEventListener("click",function() {
+    let h1 = document.createElement("h1");
+
+    let sen = Math.floor(Math.random() * arr.length + 1);
+    h1.innerText = arr[sen];
+
+    let top = Math.random()*100;
+    let left = Math.random()*100;
+
+    h1.style.top = top + "%";
+    h1.style.left = left + "%";
+    h1.style.position = "absolute"
 
     let c1 = Math.random()*256;
     let c2 = Math.random()*256;
     let c3 = Math.random()*256;
-    div.style.backgroundColor = `rgb(${c1},${c2},${c3})`
-    
-    let top = Math.random()*100;
-    let left = Math.random()*100;
 
-    div.style.top = top + "%";
-    div.style.left = left + "%";
-    div.style.position = "absolute"
-    main.appendChild(div);
+    h1.style.color = `rgb(${c1},${c2},${c3})`
+    main.appendChild(h1);
 })
