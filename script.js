@@ -1,15 +1,20 @@
-let h2 = document.querySelector('h2');
+// let box = document.querySelector("#box");
+// let button = document.querySelector("button");
 
-let inc = document.querySelector('#inc');
-let dec = document.querySelector('#dec');
+// let c1 = Math.floor(Math.random()*256);
+// let c2 = Math.floor(Math.random()*256);
+// let c3 = Math.floor(Math.random()*256);
 
-let i = 0;
-inc.addEventListener("click", function(){
-    i++;
-    h2.innerHTML = i;
-})
+// button.addEventListener("click",function(){
+//     box.style.backgroundColor = `rgb(${c1},${c2},${c3})`;
+// }) 
 
-dec.addEventListener("click", function(){
-    i--;
-    h2.innerHTML = i;
-})
+// 2.
+
+let arr = ['mohan','raj','akash','aditya','vaishnavi','tanuja','omkar','rutuja'];
+
+let a = Math.floor(Math.random()*arr.length);
+
+console.log(arr[a]);
+
+
