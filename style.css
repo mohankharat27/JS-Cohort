@@ -9,25 +9,61 @@ html, body {
     width: 100%;
 }
 
-body{
-    overflow: hidden;
-}
-
 main{
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    background-color: black;
 }
 
-button{
-    padding: 20px 30px;
-    background-color: chartreuse;
-    color: white;
-    font-size: 15px;
+.card{
+    height: 300px;
+    width: 500px;
+    background-color:white;
     border-radius: 10px;
-    z-index: 9;
-    position: relative;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.outer{
+    width: 80%;
+    height: 18px;
+    background-color: grey;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 18px;
+    border-radius: 10px;
+}
+
+.inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.bottom button{
+    padding: 20px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+.bottom h2{
+    font-size: 50px;
 }
