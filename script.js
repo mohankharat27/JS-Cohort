@@ -1,23 +1,20 @@
-let btn = document.querySelector("button");
-let h2 = document.querySelector("h2");
-let inner = document.querySelector(".inner")
 
-let grow = 0;
-let int;
+var img = document.querySelector('img')
+var love = document.querySelector('#love')
 
-btn.addEventListener("click",function() {
-    int = setInterval(() => {
-        grow++;
-        h2.innerHTML = grow + "%";
-        inner.style.width = grow + "%"
+img.addEventListener('dblclick', function () {
 
-        if(grow >= 100){
-            clearInterval(int);
-        }
-    }, 50);
+    love.style.opacity = 1
+    love.style.transform = 'translate(-50%,-50%) scale(1) rotate(0deg)'
 
-    setTimeout(function() {
-    clearInterval(int)
-    },5000)
-})   
+    setTimeout(function () {
+        love.style.transform = 'translate(-50%,-300%) scale(1) rotate(60deg)'
+    }, 800)
+    setTimeout(function () {
+        love.style.opacity = 0
+    }, 1000)
+    setTimeout(function () {
+        love.style.transform = 'translate(-50%,-50%) scale(0) rotate(-60deg)'
+    }, 1200)
 
+})

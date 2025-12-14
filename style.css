@@ -1,69 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card{
-    height: 300px;
-    width: 500px;
-    background-color:white;
-    border-radius: 10px;
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+}
+.card div{
+  position: relative;
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.card h2{
+  font-size: 20px;
+  text-align: center;
 }
 
-p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
+.card i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  opacity: 1;
+  
+  
+  background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 
-.outer{
-    width: 80%;
-    height: 18px;
-    background-color: grey;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 18px;
-    border-radius: 10px;
-}
-
-.inner{
-    height: 100%;
-    width: 0%;
-    background-color: green;
-    border-radius: 10px;
-}
-
-.bottom{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.bottom button{
-    padding: 20px 25px;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    font-weight: 700;
-}
-
-.bottom h2{
-    font-size: 50px;
+  transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+  transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
 }
