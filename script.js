@@ -1,12 +1,7 @@
-let img = document.querySelector("img")
-let msg = document.querySelector("h2 span")
+let cursor = document.querySelector("img")
+document.body.querySelector
 
-img.addEventListener("mouseenter",function(){
-    msg.innerHTML = "Chutki se door hoja....."
-    document.body.style.backgroundColor = "red"
-})
-
-img.addEventListener("mouseleave",function(){
-    msg.innerHTML = "Good! doooor hi rah....."
-    document.body.style.backgroundColor = "black"
+document.body.addEventListener("mousemove",function(detl){
+    cursor.style.left = detl.x + 'px'
+    cursor.style.top = detl.y + 'px'
 })
