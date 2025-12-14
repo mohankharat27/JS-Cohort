@@ -1,7 +1,6 @@
-let cursor = document.querySelector("img")
-document.body.querySelector
+let h2 = document.querySelector("h2");
 
-document.body.addEventListener("mousemove",function(detl){
-    cursor.style.left = detl.x + 'px'
-    cursor.style.top = detl.y + 'px'
+document.body.addEventListener("keydown",function(dtls){
+    console.log(dtls.code)
+    h2.innerHTML = dtls.code
 })
