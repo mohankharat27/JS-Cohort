@@ -9,17 +9,24 @@ html, body {
     width: 100%;
 }
 
-main{
-    height: 100%;
-    width: 100%;
+
+.elem{
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
 }
 
-h2{
-    background-color: gainsboro;
-    padding: 80px 100px;
-    border-radius: 10px;
-    font-size: 40px;
+button{
+    padding: 20px 30px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
 }
+

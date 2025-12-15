@@ -1,6 +1,12 @@
-let h2 = document.querySelector("h2");
+let allBtn = document.querySelectorAll("button");
 
-document.body.addEventListener("keydown",function(dtls){
-    console.log(dtls.code)
-    h2.innerHTML = dtls.code
+allBtn.forEach(function(elem){
+    elem.addEventListener("click",() =>{
+        
+        if(elem.innerHTML == "Add Friend"){
+            elem.innerHTML = "Remove"
+        } else{
+            elem.innerHTML = "Add Friend"
+        }
+    })
 })
