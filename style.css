@@ -9,24 +9,121 @@ html, body {
     width: 100%;
 }
 
-
-.elem{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    gap: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 15px;
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom,black,gray,rgb(32, 30, 30));
+    padding: 20px;
+    overflow: auto;
 }
 
-button{
-    padding: 20px 30px;
-    background-color: royalblue;
-    border: none;
-    border-radius: 15px;
+section{
+    height: 100%;
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.all-reels{
+    height: 100%;
+    width: 100%;
+    /* background-color: crimson; */
+}
+
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: crimson;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reel .bottom{
+    padding: 30px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0),gray);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom .user{
+    display: flex;
+    align-items: ce;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom .user img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom>h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.bottom .user h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom .user button{
+    background-color: transparent;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+
+.right{
+    padding: 30PX;
+    display: fle;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    /* height: 100%; */
+    /* transform: translateX(100%); */
+    bottom: 12%;
+    /* background: linear-gradient(to right, transparent,rgba(0, 0, 0, 0.258)); */
+}
+
+.right h4{
     cursor: pointer;
 }
 
+.right i{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.right h6{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.right>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.love{
+    color: red;
+}
